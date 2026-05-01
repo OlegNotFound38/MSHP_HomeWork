@@ -12,4 +12,4 @@ count_tasks = int(input("Сколько в домашке заданий?\n"))
 print('Вот твои ссылки. Удачи')
 for i in range(count_tasks):
     link = f"https://github.com/OlegNotFound38/MSHP_HomeWork/blob/main/{data}/HomeWork/Task{letters[i]}/Task{letters[i]}.cpp"
-    webbrowser.open(link)
+    webbrowser.open_new(link)
