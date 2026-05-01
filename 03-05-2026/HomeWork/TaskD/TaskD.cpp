@@ -9,7 +9,13 @@ int main() {
 
 // вставляемый код ниже
 
-
+for (int i = 0; i < n; i++){
+    for (int j = 0; j < n; j++){
+        if (i == j) arr2d[i][j] = 0;// на главной диагонали записывается число 0.
+        else if (arr1d[i] > arr1d[j]) arr2d[i][j] = arr1d[i];//arr1d[i] больше
+        else arr2d[i][j] = arr1d[j];//arr1d[j] больше
+    }
+}
 
 // вставляемый код выше
 
