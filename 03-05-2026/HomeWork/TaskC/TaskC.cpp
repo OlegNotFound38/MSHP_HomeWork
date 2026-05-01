@@ -10,5 +10,19 @@ int main() {
         }
     }
 
-    return 0;
+    bool flag;
+    for (int j = 0; j < m; j++){
+        flag = true;
+        for (int i = 0; i < n; i++){
+            if (arr[i][j] <= 0){flag = false;}
+        }
+
+        if (flag = true){
+            cout << "YES";
+            return 0;
+        }
+    }
+
+    cout << "NO";
+    return 1;
 }
