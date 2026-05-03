@@ -1,4 +1,3 @@
-/*
 #include <iostream>
 using namespace std;
 int main() {
@@ -28,6 +27,3 @@ int main() {
     cout << "NO" << endl;
     return 1;
 }
-*/
-
-//КОД СЕЙЧАС НЕПРАВИЛЬНЫЙ, Я ПОКА НЕ НАШЕЛ ОШИБКУ
