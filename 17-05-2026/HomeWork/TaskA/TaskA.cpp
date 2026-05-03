@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n, m,
+    maxI = 0, maxJ = 0;
+    int arr[100][100];
+    cin >> n >> m;
+
+    for (int i = 0; i < n; i++){
+        for (int j = 0; j < m; j++){
+            cin >> arr[i][j];
+
+            if (arr[i][j] > arr[maxI][maxJ]){maxI = i; maxJ = j;}
+        }
+    }
+
+    cout << maxI << " " << maxJ << endl;
+    
+    return 0;
+}
