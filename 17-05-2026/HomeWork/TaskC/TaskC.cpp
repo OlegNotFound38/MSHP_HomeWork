@@ -17,13 +17,12 @@ int main() {
             if (arr[i][j] <= 0){flag = false;}
         }
 
-        if (flag = true){
+        if (flag == true){
             cout << "YES" << endl;
-            cout << j << endl;
             return 0;
         }
     }
 
     cout << "NO" << endl;
-    return 1;
+    return 0;
 }
