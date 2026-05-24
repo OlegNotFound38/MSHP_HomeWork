@@ -1,22 +1,24 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int N;
-    int arr[500][500];
-    cin >> N;
+    short n; cin >> n;
 
-    for (int i = 0; i < N; i++){
-        for (int j = 0; j < N; j++){
-            cin >> arr[i][j];
+    short** arr = new short*[n];
+    for (short i = 0; i < n; i++){
+        arr[i] = new short[n];
+
+        for (short j = 0; j < n; j++) cin >> arr[i][j];
+    }
+
+    for (short i = n-1; i >= 0; i--){
+        for (short j = 0; j < n; j++){
+            if (j == i) cout << arr[i][j]<< " ";
         }
     }
+    
 
-    int min = arr[1][1];
-    for (int i = 0; i < N; i++){
-        if (arr[i][i] < min){min = arr[i][i];}
-    }
-
-    cout << min;
+    for (short i = 0; i < n; i++) delete[] arr[i];
+    delete[] arr;
 
     return 0;
 }
