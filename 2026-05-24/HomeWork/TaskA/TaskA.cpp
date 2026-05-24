@@ -6,7 +6,7 @@ int main() {
     int value, count = 0;
     for (int i = 0; i < n; i++){
         cin >> value;
-        if (n % 3 == 0 || n % 5 == 0) count++;
+        if (value % 3 == 0 || value % 5 == 0) count++;
     }
 
     cout << count;
