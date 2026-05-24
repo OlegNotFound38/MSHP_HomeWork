@@ -1,18 +1,14 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int N;
-    int arr[500][500];
-    cin >> N;
+    int n; cin >> n;
 
-    for (int i = 0; i < N; i++){
-        for (int j = 0; j < N; j++){
-            cin >> arr[i][j];
+    for (int i = 0; i < n; i++){
+        for (int j = 0; j < n; j++){
+            if ((i == j) || (j == n-1-i) || (i == n/2) || (j == n/2)) cout << "* ";
+            else cout << ". ";
         }
-    }
-
-    for (int i = 0; i < N; i++){
-        cout << arr[i][N-1-i] << " ";
+        cout << endl;
     }
 
     return 0;
