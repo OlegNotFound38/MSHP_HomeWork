@@ -1,23 +1,15 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int n, m;
-    int arr[100][100];
-    cin >> n >> m;
-// вставляемый код ниже
+    short n; cin >> n;
 
+    int value, count = 0;
     for (int i = 0; i < n; i++){
-        for (int j = 0; j < m; j++){
-            arr[i][j] = j;
-        }
+        cin >> value;
+        if (n % 3 == 0 || n % 5 == 0) count++;
     }
 
-// вставляемый код выше
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-            cout << arr[i][j] << " ";
-        }
-        cout << endl;
-    }
+    cout << count;
+
     return 0;
 }
