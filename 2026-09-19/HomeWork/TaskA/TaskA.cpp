@@ -3,10 +3,18 @@
 using namespace std;
 
 int main(){
-    int a, b, c; cin >> a >> b >> c;
+    short arr[100], n; cin >> n;
 
-    if (a == b || b == c || a == c) cout << "YES";
-    else cout << "NO";
-    
+    for (short i = 0; i < n; i++) cin >> arr[i];
+   
+    for (short i = 0; i < n; i++){
+        if (arr[i]%2 == 0) cout << arr[i] << " ";
+    }
+
+    for (short i = 0; i < n; i++){
+        if (arr[i]%2 != 0) cout << arr[i] << " ";
+    }
+
+
     return 0;
 }
