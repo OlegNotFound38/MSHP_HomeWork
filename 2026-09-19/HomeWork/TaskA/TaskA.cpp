@@ -1,20 +1,25 @@
-#include <iostream>
+#include <fstream>
 
 using namespace std;
 
 int main(){
-    short arr[100], n; cin >> n;
+    ifstream fin("input.txt");
+    ofstream fout("output.txt");
 
-    for (short i = 0; i < n; i++) cin >> arr[i];
+    short arr[100], n; fin >> n;
+
+    for (short i = 0; i < n; i++) fin >> arr[i];
    
     for (short i = 0; i < n; i++){
-        if (arr[i]%2 == 0) cout << arr[i] << " ";
+        if (arr[i]%2 == 0) fout << arr[i] << " ";
     }
 
     for (short i = 0; i < n; i++){
-        if (arr[i]%2 != 0) cout << arr[i] << " ";
+        if (arr[i]%2 != 0) fout << arr[i] << " ";
     }
 
+    fin.close();
+    fout.close();
 
     return 0;
 }
