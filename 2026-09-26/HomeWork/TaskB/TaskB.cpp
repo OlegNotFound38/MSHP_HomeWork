@@ -3,7 +3,8 @@
 using namespace std;
 
 bool foo(int a, short value){
-    while (a >= 0){
+    if (a == value) return true;
+    while (a > 0){
         if (a % 10 == value) return true;
         a /= 10;
     }
