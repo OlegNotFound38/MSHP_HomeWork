@@ -19,7 +19,7 @@ int main(){
 
     short sum = 0;
     for (short i = 0; i < n; i++){
-        if (foo) sum++;
+        if (foo(arr[i], k)) sum++;
     }
 
     cout << sum << endl;
